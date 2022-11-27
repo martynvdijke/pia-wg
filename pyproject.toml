@@ -1,0 +1,16 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Martyn van Dijke", email = "martijnvdijke600@gmail.com"},
+]
+dependencies = ["certifi==2021.5.30", "chardet==3.0.4", "idna==2.10", "pick==1.0.0", "requests==2.26.0", "requests-toolbelt==0.9.1", "urllib3==1.26.6", "icmplib==3.0.3", "pick==1.0.0", "PyYAML==6.0", "requests==2.26.0", "requests-toolbelt==0.9.1", "urllib3==1.26.6"]
+requires-python = ">=3.10"
+license = {text = "GPL-3.0"}
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm]

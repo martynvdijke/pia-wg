@@ -12,11 +12,6 @@ def main():
     pia = piawg()
     regions = sorted([x for x in pia.server_list if 'wg' in pia.server_list[x]['servers']])
 
-    # Parse arguments
-    parser = argparse.ArgumentParser(description='Generate PIA wireguard config')
-    parser.add_argument('-r', '--region', dest='region', choices=["auto"]+regions, help='Allowed values are '+', '.join(regions), metavar='')
-    parser.add_argument('--sort-latency', action='store_true', help='Display lowest latency regions first (requires root)')
-    args = parser.parse_args()
 
     # Load config
     config = None
